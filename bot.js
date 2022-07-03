@@ -357,8 +357,20 @@ bot.hears('/bot', async (ctx) => {
     let mast2=0;
     let mast3=0;
     let mast4=0;
+      let fir=0;
       score_dealer = data.items.results[0].results.score_dealer
-  
+    for (let i = 0; i <= 10; i++) {
+  score_dealer = data.items.results[i].results.score_dealer
+  score_player = data.items.results[i].results.score_player
+   console.log("игрок " + score_player + " "+ score_dealer +" дилер")
+
+  if ((parseInt(score_player,10) === 11) || (parseInt(score_dealer,10) ===11) || (parseInt(score_player,10) ===12) || (parseInt(score_dealer,10) ===12) ||
+(parseInt(score_player,10) ===13) || (parseInt(score_dealer,10) ===13))
+      { fir = fir + 1;}
+}
+console.log(fir)    
+if (fir === 0)
+{ctx.reply( 'Фигурок не было 11 раздач');}
       for (let i = 0; i <= 24; i++) {
           score_dealer = data.items.results[i].results.score_dealer
           score_player = data.items.results[i].results.score_player
