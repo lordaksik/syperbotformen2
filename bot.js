@@ -453,7 +453,7 @@ if (result5 === 0 && result55 === 0 && result555 === 0)
      if (result3 === 0 && result33 === 0  && result334 === 0)
     { ctx.reply( 'Не было ничьи 90 минут');}
     
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 11; i++) {
         score_dealer = data.items.results[i].results.card_dealer.suit
         score_player = data.items.results[i].results.card_player.suit
         
@@ -468,21 +468,21 @@ if (result5 === 0 && result55 === 0 && result555 === 0)
   
     }
     
-    if(mast1===12)
-    {ctx.reply('Буби не было 12 раздач')}
+    if(mast1===11)
+    {ctx.reply('Буби не было 11 раздач')}
     //diamonds- буби
     //clubs - крести
     //spades - пики
     //hearts - чирва
     //
-   if(mast2===12)
-   {ctx.reply('Крести не было 12 раздач')}
+   if(mast2===11)
+   {ctx.reply('Крести не было 11 раздач')}
   
-   if(mast5===12)
-   {ctx.reply('Пики не было 12 раздач')}
+   if(mast5===11)
+   {ctx.reply('Пики не было 11 раздач')}
    
-   if(mast5===12)
-   {ctx.reply('Чирвы не было 12 раздач')}
+   if(mast5===11)
+   {ctx.reply('Чирвы не было 11 раздач')}
   
 } catch(err) {
     console.log(err);    
