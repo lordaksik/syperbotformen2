@@ -490,10 +490,10 @@ if (result5 === 0 && result55 === 0 && result555 === 0)
    if(mast2===11)
    {ctx.reply('Крести не было 11 раздач')}
   
-   if(mast5===11)
+   if(mast3===11)
    {ctx.reply('Пики не было 11 раздач')}
    
-   if(mast5===11)
+   if(mast4===11)
    {ctx.reply('Чирвы не было 11 раздач')}
   
 } catch(err) {
