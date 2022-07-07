@@ -65,7 +65,7 @@ if (fir === 0)
      }
     
      if (result2 == 0)
-    {ctx.reply( 'Не было 8 уже 29 раздач');}
+    {ctx.reply( 'Не было 8 уже 30 раздач');}
 
     for (let i = 0; i <= 29; i++) {
       score_dealer = data.items.results[i].results.score_dealer
