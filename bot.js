@@ -56,7 +56,7 @@ if (fir === 0)
       if (result == 0)
      { ctx.reply( 'Больших кэфов давно не было 20 минут');}
      
-      for (let i = 0; i <= 24; i++) {
+      for (let i = 0; i <= 29; i++) {
          score_dealer = data.items.results[i].results.score_dealer
          score_player = data.items.results[i].results.score_player
          if ((score_player == 8) || (score_dealer == 8))
@@ -65,7 +65,7 @@ if (fir === 0)
      }
     
      if (result2 == 0)
-    {ctx.reply( 'Не было 8 уже 25 раздач');}
+    {ctx.reply( 'Не было 8 уже 29 раздач');}
 
     for (let i = 0; i <= 29; i++) {
       score_dealer = data.items.results[i].results.score_dealer
@@ -127,7 +127,7 @@ if (result5 === 0 && result55 === 0 && result555 === 0)
             { result33 = result33 + 1;}
      }
       var result334=0;
-        for (let i = 0; i <= 29; i++) {
+        for (let i = 0; i <= 9; i++) {
          score_dealer3 = data3.items.results[i].results.score_dealer
          score_player3 = data3.items.results[i].results.score_player
  
@@ -135,9 +135,9 @@ if (result5 === 0 && result55 === 0 && result555 === 0)
             { result334 = result334 + 1;}
      }
      if (result3 === 0 && result33 === 0  && result334 === 0)
-    { ctx.reply( 'Не было ничьи 90 минут');}
+    { ctx.reply( 'Не было ничьи 70 минут');}
     
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 11; i++) {
         score_dealer = data.items.results[i].results.card_dealer.suit
         score_player = data.items.results[i].results.card_player.suit
         
@@ -152,21 +152,21 @@ if (result5 === 0 && result55 === 0 && result555 === 0)
   
     }
     
-    if(mast1===12)
-    {ctx.reply('Буби не было 12 раздач')}
+    if(mast1===11)
+    {ctx.reply('Буби не было 11 раздач')}
     //diamonds- буби
     //clubs - крести
     //spades - пики
     //hearts - чирва
     //
-   if(mast2===12)
-   {ctx.reply('Крести не было 12 раздач')}
+   if(mast2===11)
+   {ctx.reply('Крести не было 11 раздач')}
   
-   if(mast3===12)
-   {ctx.reply('Пики не было 12 раздач')}
+   if(mast3===11)
+   {ctx.reply('Пики не было 11 раздач')}
    
-   if(mast4===12)
-   {ctx.reply('Чирвы не было 12 раздач')}
+   if(mast4===11)
+   {ctx.reply('Чирвы не было 1 раздач')}
   
 } catch(err) {
     console.log(err);    
