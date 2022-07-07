@@ -6,335 +6,7 @@ bot.start((ctx) => {ctx.reply(`Привет ${ctx.message.from.first_name}`)
 console.log(ctx.message)})
 bot.help((ctx) => ctx.reply('Напиши /bot'))
 bot.hears('/bot', async (ctx) => {
-  async function request2() {
-     var now = new Date();
-    let res8=0;
-    var date= now.getHours()+':'+now.getMinutes();
-      //9:18   11.36 13.54    16.12   18.30   20.48   23.06
-   
- if(date==='9:0'){
-            response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/1/");
-            data = await response.json()
-            response2 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/2/");
-            data2 = await response2.json()
-            response3 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/3/");
-            data3 = await response3.json()
-            response4 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/4/");
-            data4 = await response4.json()
-           for(i=0;i<30;i++){
-            score_dealer = data.items.results[i].results.score_dealer
-            score_player = data.items.results[i].results.score_player
-            score_dealer2 = data2.items.results[i].results.score_dealer
-            score_player2 = data2.items.results[i].results.score_player
-            score_dealer3 = data3.items.results[i].results.score_dealer
-            score_player3 = data3.items.results[i].results.score_player
-            score_dealer4 = data4.items.results[i].results.score_dealer
-            score_player4 = data4.items.results[i].results.score_player
-            if(score_dealer==='8'){
-                res8++;
-            }
-            if(score_player==='8'){
-                res8++;
-            }
-            if(score_dealer2==='8'){
-                res8++;
-            }
-            if(score_player2==='8'){
-                res8++;
-            }
-            if(score_dealer3==='8'){
-                res8++;
-            }
-            if(score_player3==='8'){
-                res8++;
-            }
-            if(score_dealer4==='8'){
-                res8++;
-            }
-            if(score_player4==='8'){
-                res8++;
-            }
-           }
-           ctx.reply( 'Конец шуза в 9:18')
-           ctx.reply( res8);
-    }
-    if(date==='11:18'){
-            response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/1/");
-            data = await response.json()
-            response2 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/2/");
-            data2 = await response2.json()
-            response3 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/3/");
-            data3 = await response3.json()
-            response4 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/4/");
-            data4 = await response4.json()
-           for(i=0;i<30;i++){
-            score_dealer = data.items.results[i].results.score_dealer
-            score_player = data.items.results[i].results.score_player
-            score_dealer2 = data2.items.results[i].results.score_dealer
-            score_player2 = data2.items.results[i].results.score_player
-            score_dealer3 = data3.items.results[i].results.score_dealer
-            score_player3 = data3.items.results[i].results.score_player
-            score_dealer4 = data4.items.results[i].results.score_dealer
-            score_player4 = data4.items.results[i].results.score_player
-            if(score_dealer==='8'){
-                res8++;
-            }
-            if(score_player==='8'){
-                res8++;
-            }
-            if(score_dealer2==='8'){
-                res8++;
-            }
-            if(score_player2==='8'){
-                res8++;
-            }
-            if(score_dealer3==='8'){
-                res8++;
-            }
-            if(score_player3==='8'){
-                res8++;
-            }
-            if(score_dealer4==='8'){
-                res8++;
-            }
-            if(score_player4==='8'){
-                res8++;
-            }
-           }
-           ctx.reply( 'Конец шуза в 11:36')
-           ctx.reply( res8);
-    }
-    if(date==='13:36'){
-            response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/1/");
-            data = await response.json()
-            response2 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/2/");
-            data2 = await response2.json()
-            response3 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/3/");
-            data3 = await response3.json()
-            response4 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/4/");
-            data4 = await response4.json()
-           for(i=0;i<30;i++){
-            score_dealer = data.items.results[i].results.score_dealer
-            score_player = data.items.results[i].results.score_player
-            score_dealer2 = data2.items.results[i].results.score_dealer
-            score_player2 = data2.items.results[i].results.score_player
-            score_dealer3 = data3.items.results[i].results.score_dealer
-            score_player3 = data3.items.results[i].results.score_player
-            score_dealer4 = data4.items.results[i].results.score_dealer
-            score_player4 = data4.items.results[i].results.score_player
-            if(score_dealer==='8'){
-                res8++;
-            }
-            if(score_player==='8'){
-                res8++;
-            }
-            if(score_dealer2==='8'){
-                res8++;
-            }
-            if(score_player2==='8'){
-                res8++;
-            }
-            if(score_dealer3==='8'){
-                res8++;
-            }
-            if(score_player3==='8'){
-                res8++;
-            }
-            if(score_dealer4==='8'){
-                res8++;
-            }
-            if(score_player4==='8'){
-                res8++;
-            }
-           }
-           ctx.reply( 'Конец шуза в 13:54')
-           ctx.reply(res8);
-    }
-    if(date==='15:54'){
-            response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/1/");
-            data = await response.json()
-            response2 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/2/");
-            data2 = await response2.json()
-            response3 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/3/");
-            data3 = await response3.json()
-            response4 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/4/");
-            data4 = await response4.json()
-           for(i=0;i<30;i++){
-            score_dealer = data.items.results[i].results.score_dealer
-            score_player = data.items.results[i].results.score_player
-            score_dealer2 = data2.items.results[i].results.score_dealer
-            score_player2 = data2.items.results[i].results.score_player
-            score_dealer3 = data3.items.results[i].results.score_dealer
-            score_player3 = data3.items.results[i].results.score_player
-            score_dealer4 = data4.items.results[i].results.score_dealer
-            score_player4 = data4.items.results[i].results.score_player
-            if(score_dealer==='8'){
-                res8++;
-            }
-            if(score_player==='8'){
-                res8++;
-            }
-            if(score_dealer2==='8'){
-                res8++;
-            }
-            if(score_player2==='8'){
-                res8++;
-            }
-            if(score_dealer3==='8'){
-                res8++;
-            }
-            if(score_player3==='8'){
-                res8++;
-            }
-            if(score_dealer4==='8'){
-                res8++;
-            }
-            if(score_player4==='8'){
-                res8++;
-            }
-           }
-           ctx.reply( 'Конец шуза в 16:12')
-           ctx.reply( res8);
-    }
-    if(date==='18:12'){
-            response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/1/");
-            data = await response.json()
-            response2 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/2/");
-            data2 = await response2.json()
-            response3 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/3/");
-            data3 = await response3.json()
-            response4 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/4/");
-            data4 = await response4.json()
-           for(i=0;i<30;i++){
-            score_dealer = data.items.results[i].results.score_dealer
-            score_player = data.items.results[i].results.score_player
-            score_dealer2 = data2.items.results[i].results.score_dealer
-            score_player2 = data2.items.results[i].results.score_player
-            score_dealer3 = data3.items.results[i].results.score_dealer
-            score_player3 = data3.items.results[i].results.score_player
-            score_dealer4 = data4.items.results[i].results.score_dealer
-            score_player4 = data4.items.results[i].results.score_player
-            if(score_dealer==='8'){
-                res8++;
-            }
-            if(score_player==='8'){
-                res8++;
-            }
-            if(score_dealer2==='8'){
-                res8++;
-            }
-            if(score_player2==='8'){
-                res8++;
-            }
-            if(score_dealer3==='8'){
-                res8++;
-            }
-            if(score_player3==='8'){
-                res8++;
-            }
-            if(score_dealer4==='8'){
-                res8++;
-            }
-            if(score_player4==='8'){
-                res8++;
-            }
-           }
-           ctx.reply( 'Конец шуза в 18:30')
-           ctx.reply(res8);
-    }
-    if(date==='20:30'){
-            response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/1/");
-            data = await response.json()
-            response2 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/2/");
-            data2 = await response2.json()
-            response3 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/3/");
-            data3 = await response3.json()
-            response4 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/4/");
-            data4 = await response4.json()
-           for(i=0;i<30;i++){
-            score_dealer = data.items.results[i].results.score_dealer
-            score_player = data.items.results[i].results.score_player
-            score_dealer2 = data2.items.results[i].results.score_dealer
-            score_player2 = data2.items.results[i].results.score_player
-            score_dealer3 = data3.items.results[i].results.score_dealer
-            score_player3 = data3.items.results[i].results.score_player
-            score_dealer4 = data4.items.results[i].results.score_dealer
-            score_player4 = data4.items.results[i].results.score_player
-            if(score_dealer==='8'){
-                res8++;
-            }
-            if(score_player==='8'){
-                res8++;
-            }
-            if(score_dealer2==='8'){
-                res8++;
-            }
-            if(score_player2==='8'){
-                res8++;
-            }
-            if(score_dealer3==='8'){
-                res8++;
-            }
-            if(score_player3==='8'){
-                res8++;
-            }
-            if(score_dealer4==='8'){
-                res8++;
-            }
-            if(score_player4==='8'){
-                res8++;
-            }
-           }
-           ctx.reply( 'Конец шуза в 20:48')
-           ctx.reply( res8);
-    }
-    if(date==='22:48'){
-            response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/1/");
-            data = await response.json()
-            response2 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/2/");
-            data2 = await response2.json()
-            response3 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/3/");
-            data3 = await response3.json()
-            response4 = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-27-07/8/4/");
-            data4 = await response4.json()
-           for(i=0;i<30;i++){
-            score_dealer = data.items.results[i].results.score_dealer
-            score_player = data.items.results[i].results.score_player
-            score_dealer2 = data2.items.results[i].results.score_dealer
-            score_player2 = data2.items.results[i].results.score_player
-            score_dealer3 = data3.items.results[i].results.score_dealer
-            score_player3 = data3.items.results[i].results.score_player
-            score_dealer4 = data4.items.results[i].results.score_dealer
-            score_player4 = data4.items.results[i].results.score_player
-            if(score_dealer==='8'){
-                res8++;
-            }
-            if(score_player==='8'){
-                res8++;
-            }
-            if(score_dealer2==='8'){
-                res8++;
-            }
-            if(score_player2==='8'){
-                res8++;
-            }
-            if(score_dealer3==='8'){
-                res8++;
-            }
-            if(score_player3==='8'){
-                res8++;
-            }
-            if(score_dealer4==='8'){
-                res8++;
-            }
-            if(score_player4==='8'){
-                res8++;
-            }
-           }
-           ctx.reply('Конец шуза в 23:06');
-           ctx.reply(res8);
-    }
-  }
+  
    async function request() {
     try {
       const response = await fetch("https://betgames9.betgames.tv/web/v2/games/results/testpartner/en/0/2020-30-09/8/1/")
@@ -359,7 +31,7 @@ bot.hears('/bot', async (ctx) => {
     let mast4=0;
       let fir=0;
       score_dealer = data.items.results[0].results.score_dealer
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 0; i <= 9; i++) {
   score_dealer = data.items.results[i].results.score_dealer
   score_player = data.items.results[i].results.score_player
    console.log("игрок " + score_player + " "+ score_dealer +" дилер")
@@ -370,8 +42,8 @@ bot.hears('/bot', async (ctx) => {
 }
 console.log(fir)    
 if (fir === 0)
-{ctx.reply( 'Фигурок не было 11 раздач');}
-      for (let i = 0; i <= 24; i++) {
+{ctx.reply( 'Фигурок не было 10 раздач');}
+      for (let i = 0; i <= 19; i++) {
           score_dealer = data.items.results[i].results.score_dealer
           score_player = data.items.results[i].results.score_player
           // console.log("игрок " + score_player + " "+ score_dealer +" дилер")
@@ -382,9 +54,9 @@ if (fir === 0)
       }
   
       if (result == 0)
-     { ctx.reply( 'Больших кэфов давно не было 25 минут');}
+     { ctx.reply( 'Больших кэфов давно не было 20 минут');}
      
-      for (let i = 0; i <= 29; i++) {
+      for (let i = 0; i <= 24; i++) {
          score_dealer = data.items.results[i].results.score_dealer
          score_player = data.items.results[i].results.score_player
          if ((score_player == 8) || (score_dealer == 8))
@@ -393,7 +65,7 @@ if (fir === 0)
      }
     
      if (result2 == 0)
-    {ctx.reply( 'Не было 8 уже 30 раздач');}
+    {ctx.reply( 'Не было 8 уже 25 раздач');}
 
     for (let i = 0; i <= 29; i++) {
       score_dealer = data.items.results[i].results.score_dealer
@@ -465,7 +137,7 @@ if (result5 === 0 && result55 === 0 && result555 === 0)
      if (result3 === 0 && result33 === 0  && result334 === 0)
     { ctx.reply( 'Не было ничьи 90 минут');}
     
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < 12; i++) {
         score_dealer = data.items.results[i].results.card_dealer.suit
         score_player = data.items.results[i].results.card_player.suit
         
@@ -480,21 +152,21 @@ if (result5 === 0 && result55 === 0 && result555 === 0)
   
     }
     
-    if(mast1===11)
-    {ctx.reply('Буби не было 11 раздач')}
+    if(mast1===12)
+    {ctx.reply('Буби не было 12 раздач')}
     //diamonds- буби
     //clubs - крести
     //spades - пики
     //hearts - чирва
     //
-   if(mast2===11)
-   {ctx.reply('Крести не было 11 раздач')}
+   if(mast2===12)
+   {ctx.reply('Крести не было 12 раздач')}
   
-   if(mast3===11)
-   {ctx.reply('Пики не было 11 раздач')}
+   if(mast3===12)
+   {ctx.reply('Пики не было 12 раздач')}
    
-   if(mast4===11)
-   {ctx.reply('Чирвы не было 11 раздач')}
+   if(mast4===12)
+   {ctx.reply('Чирвы не было 12 раздач')}
   
 } catch(err) {
     console.log(err);    
